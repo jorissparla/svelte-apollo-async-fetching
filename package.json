@@ -22,11 +22,11 @@
     "webpack-dev-server": "^3.5.1"
   },
   "scripts": {
-    "build": "rollup -c",
-    "build2": "cross-env NODE_ENV=production webpack",
+    "build2": "rollup -c",
+    "build": "cross-env NODE_ENV=production webpack",
     "autobuild": "rollup -c -w",
-    "dev": "run-p start:dev autobuild ",
-    "dev2": "webpack-dev-server --content-base public --port 3000",
+    "dev2": "run-p start:dev autobuild ",
+    "dev": "webpack-dev-server --content-base public --port 3000",
     "start": "sirv public",
     "start:dev": "sirv public --port 3000"
   },
