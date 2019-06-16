@@ -1,4 +1,4 @@
-import ApolloClient, { gql } from 'apollo-boost';
+import ApolloClient, { gql } from "apollo-boost";
 // import ApolloClient from 'apollo-client';
 // import { InMemoryCache } from 'apollo-cache-inmemory';
 // // import { WebSocketLink } from 'apollo-link-ws';
@@ -30,4 +30,14 @@ export const GET_ACCOUNTS = gql`
   }
 `;
 
-export const client = new ApolloClient({ uri: 'http://nlbavwixs.infor.com:4000' });
+export const ALL_STANDEN = gql`
+  query ALL_STANDEN {
+    allStandens {
+      value
+      created
+      type
+    }
+  }
+`;
+
+export const client = new ApolloClient({ uri: "https://api.graph.cool/simple/v1/cj8im0xou028m0165lk76wsvj" });

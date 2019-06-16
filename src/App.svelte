@@ -3,7 +3,8 @@
   import { client } from "./apollo";
 
   import { setClient } from "svelte-apollo";
-  import Accounts from "./Accounts.svelte";
+  import Standen from "./Standen.svelte";
+  // import Accounts from "./Accounts.svelte";
   // // import Books from './Books.svelte';
 
   // // 1. Create an Apollo client and pass it to all child components
@@ -19,4 +20,5 @@
 </style>
 
 <h1>Hello {name}!</h1>
-<Accounts />
+<Standen />
+<!-- <Accounts /> -->
